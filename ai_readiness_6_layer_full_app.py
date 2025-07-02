@@ -114,7 +114,9 @@ for row in report_data:
     pdf.multi_cell(0, 10, f"{row[0]}: Score = {row[1]:.2f}, Level = {row[2]}")
 pdf.multi_cell(0, 10, f"Overall Score: {overall_score:.2f}, Level: {overall_level}")
 pdf_buffer = BytesIO()
-pdf.output(pdf_buffer)
+pdf_output = pdf.output(dest='S').encode('latin-1')
+pdf_buffer.write(pdf_output)
+pdf_buffer.seek(0)
 pdf_buffer.seek(0)
 st.download_button("📥 Download PDF Report", pdf_buffer, "ai_readiness_report.pdf", "application/pdf")
 
