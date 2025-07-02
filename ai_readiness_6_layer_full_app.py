@@ -127,7 +127,7 @@ if st.button("🔍 Ask AI Assistant for Recommendations"):
         user_prompt = f"My AI readiness scores are:\n{formatted_scores}\n\nWhat is my overall maturity level and how can I improve?"
         thread = openai.beta.threads.create()
         openai.beta.threads.messages.create(thread_id=thread.id, role="user", content=user_prompt)
-        run = openai.beta.threads.runs.create(thread_id=thread.id, assistant_id="asst_abc123XYZ")  # Replace with your actual assistant_id
+        run = openai.beta.threads.runs.create(thread_id=thread.id, assistant_id="asst_Cwb6fNX3SumrUkCXO7y5sYGx")  # Replace with your actual assistant_id
         while True:
             status = openai.beta.threads.runs.retrieve(thread_id=thread.id, run_id=run.id)
             if status.status in ["completed", "failed"]:
