@@ -31,7 +31,7 @@ questions = {
         "Are you leveraging serverless frameworks for executing cloud functions or AI agent tasks?",
         "Do you use virtualization for VM/Bare Metal provisioning, operations, and support?"
     ],
-    "3. Knowledge Layer": [
+    "3. Data Foundation Layer": [
         "Do you have a data pipeline for integrating structured and unstructured data sources?",
         "Are synthetic data generation and management services implemented in your environment?",
         "Do you use vector stores, KGs, or blob-based semantic knowledge repositories?",
