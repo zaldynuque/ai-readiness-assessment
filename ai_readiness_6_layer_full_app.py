@@ -7,8 +7,8 @@ import openai
 import time
 
 st.set_page_config(page_title="AI Readiness Assessment", layout="wide")
-st.title("🧠 AI Readiness Assessment (6-Layer Framework)")
-st.markdown("Evaluate your AI capability maturity across the six layers of the NVIDIA + Accenture reference architecture.")
+st.title("🧠 AI Readiness Assessment (6-Layer) Framework")
+st.markdown("Evaluate your AI maturity across six critical dimensions: Infrastructure, Orchestration, Knowledge, Model, Agent, and Governance.")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
