@@ -1,6 +1,6 @@
-# AI Readiness Assessment (6-Layer Framework)
+# AI Readiness Assessment (6-Layer) Framework
 
-This Streamlit app helps assess your organization's AI maturity across six architectural layers based on the NVIDIA + Accenture framework.
+This Streamlit app helps assess your organization's AI maturity across six architectural layers - Infrastructure, Data Foundation, AI Foundation Layer, Agentic Framework, Continuous Innovation.
 
 ## Features
 - One question per architectural component
@@ -26,4 +26,4 @@ streamlit secrets set OPENAI_API_KEY "sk-..."
 - 4: Optimized
 
 ## License
-MIT
+zaldynuque
