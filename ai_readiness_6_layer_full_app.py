@@ -9,7 +9,7 @@ import time
 
 st.set_page_config(page_title="AI Readiness Assessment", layout="wide")
 st.title("🧠 AI Readiness Assessment (6-Layer) Framework")
-st.markdown("Evaluate your AI capability maturity across the six layers - Infrastructure, Data Foundation, AI Foundation Layer, Agentic Framework, Continuous Innovation.")
+st.markdown("Evaluate your AI capability maturity across the six layers - Infrastructure, Orchestration, Data Foundation, Model, Application, and Governance.")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 

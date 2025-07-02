@@ -1,6 +1,6 @@
 # AI Readiness Assessment (6-Layer) Framework
 
-This Streamlit app helps assess your organization's AI maturity across six architectural layers - Infrastructure, Data Foundation, AI Foundation Layer, Agentic Framework, Continuous Innovation.
+This Streamlit app helps assess your organization's AI maturity across six architectural layers - Infrastructure, Orchestration, Data Foundation, Model, Application, and Governance.
 
 ## Features
 - One question per architectural component
