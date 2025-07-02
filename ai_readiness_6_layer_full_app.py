@@ -4,6 +4,7 @@ import pandas as pd
 from fpdf import FPDF
 from io import BytesIO
 import openai
+import os
 import time
 
 st.set_page_config(page_title="AI Readiness Assessment", layout="wide")
@@ -11,6 +12,13 @@ st.title("🧠 AI Readiness Assessment (6-Layer) Framework")
 st.markdown("Evaluate your AI capability maturity across the six layers - Infrastructure, Data Foundation, AI Foundation Layer, Agentic Framework, Continuous Innovation.")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+if not openai.api_key:
+    import streamlit as st
+    st.error("🔐 OPENAI_API_KEY is missing. Please add it to Streamlit secrets.")
+    st.stop()
 
 responses = {}
 pillar_averages = {}
